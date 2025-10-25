@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Mustafa-GELEN-s-workspace-pp555t.us-east-1.xata.sh/db/mg_screencat",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

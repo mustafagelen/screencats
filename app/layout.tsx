@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "ScreenCat",
   description: "A Screen Sharing App",
   icons: {
-    icon: "/assets/icons/logo.svg",
+    icon: "/assets/icons/screen.svg",
   },
 };
 
