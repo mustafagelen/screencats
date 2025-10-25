@@ -83,7 +83,7 @@ const SignIn = () => {
               width={22}
               height={22}
             />
-            <span>Sign in with Google</span>
+            <span>Google ile kaydolun</span>
           </button>
         </section>
       </aside>
