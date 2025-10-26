@@ -70,7 +70,7 @@ const SharedHeader = ({ subHeader, title, userImg }: SharedHeaderProps) => {
       />
     </div>
   );
-
+  console.log(userImg)
   return (
     <header className="header">
       <section className="header-container">

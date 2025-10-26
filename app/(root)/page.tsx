@@ -9,13 +9,12 @@ const Page = async ({ searchParams }: SearchParams) => {
     filter,
     Number(page) || 1
   );
-  console.log(videos.length)
 
   return (
     <main className="wrapper page">
       <SharedHeader subHeader="Public Library" title="All Videos" />
 
-      {1 ? (
+      {videos?.length > 0 ? (
         <section className="video-grid">
           {videos.map(({ video, user }) => (
             <VideoCard
