@@ -27,8 +27,8 @@ const VideoInfo = ({
       ) : (
         <EmptyState
           icon="/assets/icons/copy.svg"
-          title="No transcript available"
-          description="This video doesn’t include any transcribed content!"
+          title="Alt yazı bulunamadı"
+          description="Bu video için alt yazı bulunmamakta!"
         />
       )}
     </ul>
@@ -36,7 +36,7 @@ const VideoInfo = ({
 
   const metaDatas = [
     {
-      label: "Video title",
+      label: "Başlık",
       value: `${title} - ${new Date(createdAt).toLocaleDateString("en-US", {
         year: "numeric",
         month: "short",
@@ -44,15 +44,15 @@ const VideoInfo = ({
       })}`,
     },
     {
-      label: "Video description",
+      label: "Açıklama",
       value: description,
     },
     {
-      label: "Video id",
+      label: "Video ID",
       value: videoId,
     },
     {
-      label: "Video url",
+      label: "Video Url",
       value: videoUrl,
     },
   ];

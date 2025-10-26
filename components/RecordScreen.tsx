@@ -47,7 +47,7 @@ const RecordScreen = () => {
         name: "screen-recording.webm",
         type: recordedBlob.type,
         size: recordedBlob.size,
-        duration: recordingDuration || 0, // Store the duration with the video data
+        duration: recordingDuration || 0,
       })
     );
     router.push("/upload");
@@ -58,7 +58,7 @@ const RecordScreen = () => {
     <div className="record">
       <button onClick={() => setIsOpen(true)} className="primary-btn">
         <Image src={ICONS.record} alt="record" width={16} height={16} />
-        <span className="truncate">Record a video</span>
+        <span className="truncate">Kayıt Al</span>
       </button>
 
       {isOpen && (
@@ -66,7 +66,7 @@ const RecordScreen = () => {
           <div className="overlay-record" onClick={closeModal} />
           <div className="dialog-content">
             <figure>
-              <h3>Screen Recording</h3>
+              <h3>Video Kaydı</h3>
               <button onClick={closeModal}>
                 <Image src={ICONS.close} alt="Close" width={20} height={20} />
               </button>
@@ -76,12 +76,12 @@ const RecordScreen = () => {
               {isRecording ? (
                 <article>
                   <div />
-                  <span>Recording in progress...</span>
+                  <span>Kayıt işleniyor...</span>
                 </article>
               ) : recordedVideoUrl ? (
                 <video ref={videoRef} src={recordedVideoUrl} controls />
               ) : (
-                <p>Click record to start capturing your screen</p>
+                <p>Ekranınızın kaydını almak için tıklayın.</p>
               )}
             </section>
 
@@ -94,7 +94,7 @@ const RecordScreen = () => {
                     width={16}
                     height={16}
                   />
-                  Record
+                  Kayıt
                 </button>
               )}
               {isRecording && (
@@ -105,13 +105,13 @@ const RecordScreen = () => {
                     width={16}
                     height={16}
                   />
-                  Stop Recording
+                  Kaydı Durdur
                 </button>
               )}
               {recordedVideoUrl && (
                 <>
                   <button onClick={recordAgain} className="record-again">
-                    Record Again
+                    Tekrar Kaydet
                   </button>
                   <button onClick={goToUpload} className="record-upload">
                     <Image
@@ -120,7 +120,7 @@ const RecordScreen = () => {
                       width={16}
                       height={16}
                     />
-                    Continue to Upload
+                    Yükle
                   </button>
                 </>
               )}

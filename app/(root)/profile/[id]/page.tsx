@@ -38,8 +38,8 @@ const ProfilePage = async ({ params, searchParams }: ParamsWithSearch) => {
       ) : (
         <EmptyState
           icon="/assets/icons/video.svg"
-          title="No Videos Available Yet"
-          description="Video will show up here once you upload them."
+          title="Henüz gösterilecek video yok"
+          description="Videonuzu yüklendiğinizde burada gözükecek."
         />
       )}
     </main>

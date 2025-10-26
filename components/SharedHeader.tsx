@@ -19,12 +19,12 @@ const SharedHeader = ({ subHeader, title, userImg }: SharedHeaderProps) => {
     searchParams.get("query") || ""
   );
   const [selectedFilter, setSelectedFilter] = useState(
-    searchParams.get("filter") || "Most Recent"
+    searchParams.get("filter") || "En Son"
   );
 
   useEffect(() => {
     setSearchQuery(searchParams.get("query") || "");
-    setSelectedFilter(searchParams.get("filter") || "Most Recent");
+    setSelectedFilter(searchParams.get("filter") || "En Son");
   }, [searchParams]);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ const SharedHeader = ({ subHeader, title, userImg }: SharedHeaderProps) => {
       />
     </div>
   );
-  console.log(userImg)
+
   return (
     <header className="header">
       <section className="header-container">
@@ -97,7 +97,7 @@ const SharedHeader = ({ subHeader, title, userImg }: SharedHeaderProps) => {
               width={16}
               height={16}
             />
-            <span>Upload a video</span>
+            <span>Video Yükle</span>
           </Link>
           <RecordScreen />
         </aside>
@@ -106,7 +106,7 @@ const SharedHeader = ({ subHeader, title, userImg }: SharedHeaderProps) => {
         <div className="search">
           <input
             type="text"
-            placeholder="Search for videos, tags, folders..."
+            placeholder="Video, tag veya konu ara..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />

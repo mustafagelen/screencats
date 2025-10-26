@@ -12,7 +12,7 @@ const Page = async ({ searchParams }: SearchParams) => {
 
   return (
     <main className="wrapper page">
-      <SharedHeader subHeader="Public Library" title="All Videos" />
+      <SharedHeader subHeader="Ana Sayfa" title="Tüm Videolar" />
 
       {videos?.length > 0 ? (
         <section className="video-grid">

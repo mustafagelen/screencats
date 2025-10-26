@@ -149,7 +149,7 @@ const UploadPage = () => {
 
   return (
     <main className="wrapper-md upload-page">
-      <h1>Upload a video</h1>
+      <h1>Video Yükle</h1>
       {error && <div className="error-field">{error}</div>}
       <form
         className="rounded-20 gap-6 w-full flex flex-col shadow-10 px-5 py-7.5"
@@ -157,18 +157,18 @@ const UploadPage = () => {
       >
         <FormField
           id="title"
-          label="Title"
+          label="Başlık"
           value={formData.title}
           onChange={handleInputChange}
-          placeholder="Enter a clear and concise video title"
+          placeholder="Anlaşılır ve kısa bir başlık girin"
         />
 
         <FormField
           id="description"
-          label="Description"
+          label="Açıklama"
           value={formData.description}
           onChange={handleInputChange}
-          placeholder="Briefly describe what this video is about"
+          placeholder="Videonun ne hakkında olduğunu özetleyin"
           as="textarea"
         />
 
@@ -198,18 +198,18 @@ const UploadPage = () => {
 
         <FormField
           id="visibility"
-          label="Visibility"
+          label="Görünürlük"
           value={formData.visibility}
           onChange={handleInputChange}
           as="select"
           options={[
-            { value: "public", label: "Public" },
-            { value: "private", label: "Private" },
+            { value: "public", label: "Herkes" },
+            { value: "private", label: "Sadece Ben" },
           ]}
         />
 
         <button type="submit" disabled={isSubmitting} className="submit-button">
-          {isSubmitting ? "Uploading..." : "Upload Video"}
+          {isSubmitting ? "Yükleniyor..." : "Video Yükle"}
         </button>
       </form>
     </main>

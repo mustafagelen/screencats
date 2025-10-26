@@ -11,7 +11,7 @@ import { initialVideoState } from "@/constants";
 const VideoPlayer = ({ videoId, className }: VideoPlayerProps) => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [state, setState] = useState(initialVideoState);
-  console.log(state)
+
   useEffect(() => {
     const checkProcessingStatus = async () => {
       const status = await getVideoProcessingStatus(videoId);

@@ -30,7 +30,7 @@ const FileInput = ({
           width={24}
           height={24}
         />
-        <p>click to upload your {id}</p>
+        <p>yüklemek için tıklayın {id}</p>
       </figure>
     ) : (
       <div>

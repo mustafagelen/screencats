@@ -12,10 +12,10 @@ export const BUNNY = {
 export const emojis = ["😂", "😍", "👍"];
 
 export const filterOptions = [
-  "Most Viewed",
-  "Most Recent",
-  "Oldest First",
-  "Least Viewed",
+  "Çok Görüntülenen",
+  "En Yeniler",
+  "En Eskiler",
+  "Az Görüntülenen",
 ];
 
 export const visibilities: Visibility[] = ["public", "private"];

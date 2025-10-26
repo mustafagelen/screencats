@@ -121,12 +121,12 @@ const VideoDetailHeader = ({
               onClick={handleDelete}
               disabled={isDeleting}
             >
-              {isDeleting ? "Deleting..." : "Delete video"}
+              {isDeleting ? "Siliniyor..." : "Videoyu Sil"}
             </button>
             <div className="bar" />
             {isUpdating ? (
               <div className="update-stats">
-                <p>Updating...</p>
+                <p>Güncelleniyor...</p>
               </div>
             ) : (
               <DropdownList
